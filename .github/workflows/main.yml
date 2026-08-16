@@ -16,6 +16,9 @@ jobs:
         with:
           channel: stable
 
+      - name: Create Android project
+        run: flutter create . --platforms=android
+
       - name: Install dependencies
         run: flutter pub get
 
@@ -25,5 +28,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
+          name: smart-money-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
           name: smart-money-apk
           path: build/app/outputs/flutter-apk/app-release.apk
