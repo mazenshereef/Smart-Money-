@@ -30,5 +30,8 @@ jobs:
         with:
           name: smart-money-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+        with:
+          name: smart-money-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
           name: smart-money-apk
           path: build/app/outputs/flutter-apk/app-release.apk
